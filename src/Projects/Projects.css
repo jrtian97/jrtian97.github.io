@@ -11,6 +11,35 @@
   width: 100%;
 }
 
+.project-link {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  color: #e08283;
+  text-decoration: none;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e08283;
+  transition: .2s ease-out;
+  transform: translateZ(0) scaleX(0);
+  transform-origin: left;
+}
+
+.project-link:hover {
+  transition: .2s ease-out;
+}
+
+.project-link:hover::before {
+  transform: translateZ(0) scaleX(1);
+}
+
 @media screen and (max-width: 600px) {
   .project-title {
     text-align: center;

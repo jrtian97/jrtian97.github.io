@@ -1,10 +1,10 @@
 footer {
   color: #797979;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .footer-inner {
-  padding: .5rem 0 1rem;
+  padding: 0.5rem 0 1rem;
 }
 
 .email-link {
@@ -21,16 +21,16 @@ footer {
   right: 0;
   height: 2px;
   background-color: #e08283;
-  transition: .2s ease-out;
-  transform: scaleX(0);
+  transition: 0.2s ease-out;
+  transform: translateZ(0) scaleX(0);
   transform-origin: left;
 }
 
 .email-link:hover {
   color: #e08283;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .email-link:hover::before {
-  transform: scaleX(1);
+  transform: translateZ(0) scaleX(1);
 }
