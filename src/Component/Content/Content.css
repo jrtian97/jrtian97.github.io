@@ -1,0 +1,69 @@
+.content {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  color: #797979;
+  text-align: left;
+}
+
+.not-found {
+  padding: 4rem 0;
+  font-size: 2rem;
+}
+
+.content p {
+  margin: 2rem 0;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 1095px) {
+  .content {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 85%;
+  }
+}
+
+/* FadeIn & FadeOut */
+
+.fade-enter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(5px);
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .2s ease-in-out .3s, transform .2s ease-in-out .3s;
+}
+
+.fade-exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+}

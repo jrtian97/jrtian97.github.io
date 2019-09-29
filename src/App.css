@@ -1,0 +1,25 @@
+.App {
+  overflow: hidden;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}

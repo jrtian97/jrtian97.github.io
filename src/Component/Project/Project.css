@@ -1,0 +1,43 @@
+.description-wrapper {
+  margin: 2rem 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.description-col {
+  flex: 1;
+  padding-bottom: 1rem;
+}
+
+.description-title {
+  font-size: 1rem;
+  margin: 0 0 .8rem;
+}
+
+.job-content {
+  line-height: 150%;
+  margin-bottom: .3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .description-title, .description-content {
+    text-align: center;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .description-title {
+    margin: 0 0 .2rem;
+  }
+
+  .job-content {
+    text-align: left;
+  }
+}

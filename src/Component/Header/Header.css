@@ -1,0 +1,32 @@
+header {
+  overflow: hidden;
+}
+
+.title {
+  margin: .5rem 0;
+  user-select: none;
+}
+
+.title-link {
+  color: #505050;
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: 0 .4rem;
+  padding: 0.5rem;
+  color: #797979;
+  text-decoration: none;
+  user-select: none;
+  transition: 0.2s ease-out;
+}
+
+.nav-link:hover,
+.nav-link.selected {
+  color: #e08283;
+}
