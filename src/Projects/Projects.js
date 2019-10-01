@@ -8,6 +8,7 @@ import ste from './ste.jpg'
 
 // Project details
 const projectEE5 = {
+  videoId: 'dCzZxudr2Gw',
   description: {
     role: 'Software/Hardware Engineer',
     technique: 'MPLAB / C',
@@ -91,13 +92,14 @@ class Projects extends Component {
           </p>
           <Project detail={projectEE5.description} />
           <div>
-            <a
+            {/* <a
               className="project-link"
               href="https://kuleuven.mediaspace.kaltura.com/media/demo_movie/1_72ucgniu"
               target="_blank"
             >
               Demo Link
-            </a>
+            </a> */}
+            <YouTube videoId={projectEE5.videoId} opts={opts} />
           </div>
         </section>
 
